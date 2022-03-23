@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add logo -->
+    <link rel="icon" type="image/png" href="./images/pageLogo.png"/>
+
+    <title>Best of Bucket List</title>
+
+    <!-- Add normalize and stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interactive-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<header class="topHeader">
+    <div class="topHeaderInner">
+        <!-- Add site logo -->
+        <a href="index.html"><img src="./images/logo1.png" alt="Logo" class="siteLogo"></a>
+        <a id="nav-toggle" class="nav-toggle" href="#">&#9776;</a>
+        <nav class="topSiteNavigation">
+            <ul>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- End content container -->
+
+</header>
+
+<main>
+    <header class="siteHeader">
+        <img class="adventureAwaits img-fluid" src="./images/header.png" alt="adventure awaits">
+        <!-- <h2>There's just no telling how far I'll go</h2> -->
+    </header>
+    <!-- <section class="mainContents"> -->
+    <div class="outterDestinationMapAndNav">
+        <div class="destinationMapAndNav">
+            <div class="destinationMapArea">
+                <!-- Destination Map Image -->
+                 <div class="destinationMap">
+
+                    <!-- "https://www.image-maps.com/m/private/0/guou89qgui2mdg4ld2586egp1k_destmap.png" -->
+                    <img class="destinationMapImage" id="Image-Maps-Com-image-maps-2022-03-11-225356" src="./images/destMap.png" border="0" width="1000" height="600" orgWidth="1000" orgHeight="600" usemap="#image-maps-2022-03-11-225356" alt="" />
+                    <map name="image-maps-2022-03-11-225356" id="ImageMapsCom-image-maps-2022-03-11-225356">
+                    <area  alt="" title="brazil" href="./brazil.html#countrySelectionSection" shape="rect" coords="326,346,339,372" style="outline:none;" target="_self"     />
+                    <area  alt="" title="morocco" href="./morocco.html#countrySelectionSection" shape="rect" coords="437,164,453,191" style="outline:none;" target="_self"     />
+                    <area  alt="" title="spain" href="./spain.html#countrySelectionSection" shape="rect" coords="451,142,467,169" style="outline:none;" target="_self"     />
+                    <area  alt="" title="italy" href="./italy.html#countrySelectionSection" shape="rect" coords="504,136,520,160" style="outline:none;" target="_self"     />
+                    <area  alt="" title="uae" href="./uae.html#countrySelectionSection" shape="rect" coords="613,194,627,223" style="outline:none;" target="_self"     />
+                    <area  alt="" title="china" href="./china.html#countrySelectionSection" shape="rect" coords="802,164,817,190" style="outline:none;" target="_self"     />
+                    <area shape="rect" coords="998,598,1000,600" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+                    </map>
+                    
+                    <img src="./images/destMapMobile.png" alt="mobileMap" class="destinationMapImageMobile">
+                 </div>
+
+            </div>
+            <div class="destinationNavArea">
+                <section class="destinationNav">
+                    <h4>Select a Country</h4>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item" >
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                            Africa
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="./morocco.html#countrySelectionSection">Morocco</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Asia
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="./china.html#countrySelectionSection">China</a></li>
+                                    <li><a href="./uae.html#countrySelectionSection">UAE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Europe
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <!-- <li><a href="#">Andorra</a></li>
+                                    <li><a href="#">France</a></li>
+                                    <li><a href="#">Greece</a></li> -->
+                                    <li><a href="./italy.html#countrySelectionSection">Italy</a></li>
+                                    <li><a href="./spain.html#countrySelectionSection">Spain</a></li>
+                                    <!-- <li><a href="#">United Kingdom</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                South America
+                            </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <!-- <li><a href="#">Argentina</a></li> -->
+                                    <li><a href="./brazil.html#countrySelectionSection">Brazil</a></li>
+                                    <!-- <li><a href="#">Uraguy</a></li> -->
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Country Selection Container -->
+
+        <div class="countrySelectionContainer" id="countrySelectionSection">
+            <div class="innerCountrySelectionContainer">
+                <section class="countrySelectionInfo">
+                    <div class="countrySelectionNameDate">
+                        <div class="countryNameEmoji">
+                            <li class="countryName">Spain</li>
+                            <img src="./images/spainEmoji.png" class="emojiSpain">
+                        </div>
+                        <h3 class="dateOfVisit">Date of Visit: March 2018 & November 2021</h3>
+                    </div>
+            </section>
+
+
+            <!-- Country Top 6 Photos -->
+
+            <section class="countryPhotos">
+                <div class="countryTopPhotos featured-grid-item Spain1">
+                    <img src="./images/spain1.jpg" class="photoTop" alt="Spain">
+                </div>
+                <div class="countryTopPhotos Spain2">
+                    <img src="./images/spain2.png" class="photoTop" alt="Spain"> 
+                </div>
+                <div class="countryTopPhotos Spain3">
+                    <img src="./images/spain3.jpg" class="photoTop" alt="Spain"> 
+                </div>
+                <div class="countryTopPhotos Spain4">
+                    <img src="./images/spain4.jpeg" class="photoTop" alt="Spain"> 
+                </div>
+                <div class="countryTopPhotos Spain5">
+                    <img src="./images/spain5.jpg" class="photoTop" alt="Spain"> 
+                </div>
+                <div class="countryTopPhotos Spain6">
+                    <img src="./images/spain6.jpg" class="photoTop" alt="Spain"> 
+                </div>
+            </section>
+        
+
+
+            <!-- Best food, activity, visit again -->
+
+            <section class="countryBest">
+                <div class="countryBestNotes">
+                    <div class="countryBestNotes">
+                        <img src="./images/spainInfo.png" alt="Country Best Info" class="countryBestInfo">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- </section> -->
+    
+
+
+
+
+<footer class="site_footer">
+    <div class="copy">
+        <p>&copy; 2022 Best of Bucketlist. Made on Earth.</p>
+    </div>
+</footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="js/toggle.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1058 @@
+.mainContents {
+    margin: 20px 20px 20px 20px;
+}
+
+/* topHeader and topSiteNav */
+.topHeader {
+    display: flex;
+    padding: 0.1rem;
+    justify-content: space-between;
+    max-height: 7rem;
+    text-align: center;
+    background-color: #F8F5F5;
+}
+
+.topHeaderInner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.topHeaderInner .siteLogo {
+    display: flex;
+    padding: 1rem;
+    max-width: 310px;
+}
+
+/* Header mobile dynamics */
+@media (max-width: 760px) {
+    .topHeaderInner .siteLogo {
+    max-width: 230px;
+    }
+    .topHeader {
+        max-height: 5.5rem;
+    }
+}
+
+/* Best of Bucketlist Title */
+.siteTitle {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.siteTitle a {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #474545;
+}
+
+/* topSiteNavigation on Right Side comment out display flex for hamburger */
+.topSiteNavigation {
+    display: flex;
+    width: 25%;
+    /* display: none; */
+}
+
+.topSiteNavigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.topSiteNavigation ul li {
+    display: flex;
+    padding: 2rem;
+
+
+}
+
+.topSiteNavigation ul a {
+    text-decoration: none;
+    color: #474545;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.topSiteNavigation li a:hover {
+    color: #BB7F7F;
+}
+
+/* Burger on Right Side, comment out display none/flex as needed */
+.nav-toggle {
+    display: none;
+    margin-right: 30px;
+    color: #332E3B;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Top Nav adjustment for tablet/mobile */
+
+@media (max-width:1200px) {
+    .nav-toggle {
+        display: block;
+        justify-content: flex-end;
+    }
+    .topSiteNavigation {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #E9D3D8;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        transition: all 400ms;
+    }
+    .topSiteNavigation ul {
+        display: block;
+        text-align: center;
+    }
+    .topSiteNavigation li a{
+        font-size: 14px;
+        display: block;
+        color: #A3625F;
+        
+    }
+    .topSiteNavigation li a:hover{
+        color: #BB7F7F;
+
+    }
+    .nav-show {
+        width: 200px;
+        height: calc(30% - 70px);
+    }
+
+}
+
+
+
+
+/* There's just no telling how far I'll go */
+
+.siteHeader {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    min-height: 75px;
+    align-items: center;
+    /* border-bottom: #F8F5F5 1px solid ; */
+}
+.siteHeader .adventureAwaits {
+    display: flex;
+    max-width: 450px;
+}
+.siteHeader h2 {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Site Header adjustment */
+
+@media (max-width: 760px) {
+    .siteHeader .adventureAwaits {
+        max-height: 50px;
+    }
+}
+
+/* Destination Map and Nav */
+
+.outterDestinationMapAndNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem  0 1rem 0;
+}
+.destinationMapAndNav {
+    display: grid;
+    grid-template-columns: 75% 30%;
+    padding: 1rem;
+    width: 90%;
+    justify-content:center;
+    /* border: #F8F5F5 1px solid; */
+}
+
+.destinationNav{
+    display: flex;
+    padding: 1rem;
+
+}
+.destinationNav h4{
+    font-size: 18px;
+    color: #332E3B;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.innerDestinationMapAndNav {
+    display: flex;
+}
+
+.destinationNav a {
+    text-decoration: none;
+    color: #332E3B;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion > .accordion-item ul li{
+    list-style: none;
+}
+
+.accordion > .accordion-item button{
+    background-color:#E9D3D8;
+    color: #332E3B;
+
+}
+
+@media (max-width: 760px) {
+    .destinationNavArea .destinationNav h4 {
+        font-size: 18px;
+    }
+
+}
+
+
+.destinationNav {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem ;
+    width: 100%;
+
+}
+
+/* .destinationMapImage {
+    align-items: center;
+    display: flex;
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    margin: 2rem 2rem;
+} */
+
+
+.destinationMapImageMobile {
+    display: none;
+}
+
+/* Mobile dynamics for map and nav */
+@media (max-width: 860px) {
+    .destinationMapImage {
+    display: none;
+    }
+    .destinationNavArea .destinationNav{
+        display: flex;
+        justify-content: center;
+    }
+    .destinationMapImageMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 620px;
+    }
+}
+
+.destinationToggle {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.destinationToggle ul a{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Small screen dynamics for map and nav */
+@media (max-width:1300px) {
+    .destinationMapAndNav {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .destinationNav {
+        display: block;
+        justify-content: center;
+    }
+    .destinationNav .accordion {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .destinationMapAndNav {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        width: 75%;
+    }
+    .destinationNav {
+        display: block;
+        justify-content: center;
+    }
+    .destinationNav .accordion {
+        width: 100%;
+    }
+}
+
+@media (max-width:960px) {
+    .destinationMapAndNav {
+        display: grid;
+        grid-template-columns: 90%;
+    }
+    .destinationNav {
+        display: block;
+        justify-content: center;
+    }
+    .destinationNav .accordion {
+        width: 100%;
+    }
+}
+
+/* Country Selection Container */
+
+
+
+.countrySelectionContainer {
+    display: flex;
+    width: 100%;
+    /* padding: 10px;
+    margin: 10px; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innerCountrySelectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    width: 90%;
+
+}
+
+/* Country Selection Info */
+
+.countrySelectionInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 0 100px;
+}
+
+.countrySelectionNameDate {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.countryNameEmoji {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.countryNameEmoji img {
+    max-width: 40px;
+}
+
+@media (max-width: 760px) {
+
+    .countryNameEmoji img {
+        max-width: 27px;
+    }
+}
+
+
+.countrySelectionNameDate li {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.countrySelectionNameDate h3 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+@media (max-width: 760px) {
+
+    .countrySelectionNameDate li {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .countrySelectionNameDate h3 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+/* Country Photos */
+
+.countryPhotos {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3px;
+    width: 70%;
+    justify-content:center;
+}
+
+.countryTopPhotos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.countryTopPhotos img{
+    max-width: 100%;
+}
+
+@media (max-width:1700px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        width: 90%;
+    }
+
+    .countryPhotos img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 70%;
+    }
+
+    .countryPhotos img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:960px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 80%;
+    }
+
+    .countryPhotos img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:704px) {
+
+    .countrySelectionInfo {
+        margin: 0;
+    }
+    .countryPhotos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 80%;
+    }
+
+    .countryPhotos img {
+        max-width: 100%;
+    }
+}
+
+
+/* Country Best Section */
+
+.countryBest {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    margin: 1rem;
+    /* border: 1px solid grey; */
+
+}
+
+
+.countryBestNotes ul{
+    display: block;
+    padding: 2rem;
+}
+
+.countryBestNotes h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.countryBestNotes li {
+    list-style: none;
+}
+
+/* Food */
+.bestFood_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bestFood_icon img {
+    max-width: 200px;
+}
+
+.countryBest img {
+    max-width: 600px;
+}
+
+/* Activity */
+.bestActivity_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+.bestActivity_icon img {
+    max-width: 150px;
+}
+
+/* Visit Again */
+.visitAgain_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.visitAgain_icon img {
+    max-width: 200px;
+}
+
+@media (max-width:760px) {
+    .visitAgain_icon img {
+        max-width: 90px;
+    }
+    .bestFood_icon img {
+        max-width: 90px;
+        width: 100%;
+    }
+    .bestActivity_icon img {
+        max-width: 90px;
+    }
+    .countryBestNotes h2 {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .countryBest img {
+        max-width: 380px;
+    }
+
+}
+
+/* Footer */
+
+.site_footer {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.copy p {
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* ABOUT ME PAGE */
+
+.aboutMeHeader img {
+    display: flex;
+    max-width: 200px;
+    
+}
+
+.aboutMeHeader {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    min-height: 75px;
+    align-items: center;
+}
+
+.fastFacts {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    justify-content:first baseline;
+
+}
+
+.fastFacts img {
+    display: flex;
+    max-width: 650px;
+
+}
+
+.linkedIn {
+    display: flex;
+    justify-content: flex-start;
+    text-align:left;
+    align-items:baseline;
+    padding: 1rem 1rem 1rem 1rem;
+    padding-top: 2rem;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.linkedIn img {
+    max-width: 30px;
+
+}
+
+.linkedIn h3 {
+    font-size: 14px;
+    font-weight: 200;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media (max-width: 760px) {
+    .linkedIn {
+        display: flex;
+        justify-content: flex-start;
+        text-align:left;
+        align-items:baseline;
+        padding: 0.2rem 2rem 2rem 1rem;
+    
+    }
+    .linkedIn img {
+        max-width: 20px;    
+    }
+    
+    .linkedIn h3 {
+        font-size: 16px;
+        font-weight: 200;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content:first baseline;
+    
+    }
+    
+    .fastFacts img {
+        display: flex;
+        max-width: 500px;
+    
+    }
+
+}
+
+/* Site Header adjustment */
+
+@media (max-width: 760px) {
+    .aboutMeHeader img {
+        max-height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+.photoAndBio {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0;
+    
+}
+
+.headShotContainer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.headShotContainer img {
+    display: flex;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    justify-content:center;
+}
+
+.bio p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 1199px) {
+    .photoAndBio {
+        display: grid;
+        width: 95%;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        /* padding: 3rem; */
+        
+    }
+    .outterPhotoAndBio {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .headShotContainer img {
+        max-width: 400px;
+        border-radius: 5px;
+        padding: 0.2rem;
+        
+    }
+    .bio p {
+        font-size: 16px;
+        padding: 1px;
+    }
+    .bio {
+        padding: 1rem;
+    }
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .fastFacts img {
+        display: flex;
+        max-width: 550px;
+    }
+}
+
+
+@media (max-width: 1599px) {
+    .photoAndBio {
+        display: grid;
+        width: 95%;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        /* padding: 3rem; */
+        
+    }
+    .outterPhotoAndBio {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .headShotContainer img {
+        max-width: 500px;
+        border-radius: 5px;
+        padding: 0.2rem;
+        
+    }
+    .bio p {
+        font-size: 16px;
+        padding: 1px;
+    }
+    .bio {
+        padding: 1rem;
+    }
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .fastFacts img {
+        display: flex;
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 860px) {
+    .photoAndBio {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        justify-content: center;
+        /* padding: 3rem; */
+        
+    }
+    .outterPhotoAndBio {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .headShotContainer img {
+        max-width: 450px;
+        border-radius: 5px;
+        
+    }
+    .bio p {
+        font-size: 16px;
+        padding: 1px;
+    }
+    .bio {
+        padding: 1rem;
+    }
+
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .fastFacts img {
+        display: flex;
+        max-width: 600px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .photoAndBio {
+        display: grid;
+        width: 90%;
+        grid-template-columns: 100%;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .headShotContainer img {
+        max-width: 350px;
+        padding: .5rem;
+        border-radius: 3px;
+    }
+    .bio p {
+        font-size: 14px;
+    }
+    .fastFacts img {
+        display: flex;
+        max-width: 500px;
+    }
+    
+    
+}
+
+
+@media (min-width: 1600px) {
+    .outterPhotoAndBio {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .photoAndBio {
+        display: grid;
+        width: 70%;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+        
+    }
+
+    .bio p {
+        display: flex;
+        text-align: left;
+    }
+    .headShotContainer {
+        padding: .5rem;
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    .fastFacts {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        width: 100%;
+        text-align: left;
+    }
+    .fastFacts img {
+        display: flex;
+        max-width: 650px;
+    }
+}
+
+/* CONTACT ME PAGE */
+
+.contactHeader img {
+    display: flex;
+    max-width: 200px;
+    
+}
+
+.contactHeader {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    min-height: 75px;
+    align-items: center;
+}
+
+.reachOut {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.reachOut h3 {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formInner .inputFName{
+    display: flex;
+    padding: 10px;
+
+}
+
+.form-group3 {
+    display: flex;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #A3625F;
+    border: #A3625F;
+}
+
+.btn:hover{
+    background-color: #BB7F7F;
+}
+
+
+
+/* Error Messages */
+
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.errorMessages {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+
+}
