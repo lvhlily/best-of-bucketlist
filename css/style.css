@@ -584,7 +584,7 @@
         font-weight: 300;
     }
     .countryBest img {
-        max-width: 380px;
+        max-width: 330px;
     }
 
 }
@@ -758,6 +758,36 @@
     font-size: 16px;
 }
 
+.nextTripOutter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.whereToNextImg {
+    display: flex;
+    max-width: 400px;
+    padding-top: 1rem;
+}
+
+
+.gMaps {
+    max-width: 100%;
+}
+
+
+
+/* Google Maps API  */
+
+/* #map {
+  height: 400px;
+  width: 100%;
+} */
+
+
+
 @media (max-width: 1199px) {
     .photoAndBio {
         display: grid;
@@ -926,7 +956,9 @@
         display: flex;
         max-width: 500px;
     }
-    
+    .whereToNextImg {
+        max-width: 300px;
+    }
     
 }
 
