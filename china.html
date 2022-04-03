@@ -156,35 +156,117 @@
 
             <!-- Country Top 6 Photos -->
 
-            <section class="countryPhotos">
-                <div class="countryTopPhotos featured-grid-item  China1">
-                    <img src="./images/china1.jpeg" class="photoTop" alt="China">
-                </div>
-                <div class="countryTopPhotos China2">
-                    <img src="./images/china2.jpeg" class="photoTop" alt="China"> 
-                </div>
-                <div class="countryTopPhotos China2">
-                    <img src="./images/china3.jpeg" class="photoTop" alt="China"> 
-                </div>
-                <div class="countryTopPhotos China2">
-                    <img src="./images/china4.jpeg" class="photoTop" alt="China"> 
-                </div>
-                <div class="countryTopPhotos China2">
-                    <img src="./images/china5.jpeg" class="photoTop" alt="China"> 
-                </div>
-                <div class="countryTopPhotos China2">
-                    <img src="./images/china6.jpeg" class="photoTop" alt="China"> 
+            <section class="container">
+                <!-- Gallery -->
+                <!-- 
+                Gallery is linked to lightbox using data attributes.
+
+                To open lightbox, this is added to the gallery element: {data-toggle="modal" data-target="#exampleModal"}.
+
+                To open carousel on correct image, this is added to each image element: {data-target="#carouselExample" data-slide-to="0"}.
+                Replace '0' with corresponding slide number.
+                -->
+
+                <div class="photosContainer">
+                    <div class="container">
+                        <div class="row g-1 g-lg-2" id="gallery" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="col-4 col-sm-4 col-lg-4 gallery-custom">
+                            <img class="w-100" src="./images/china1.jpeg" alt="First slide" data-bs-target="#carouselExample" data-bs-slide-to="0">
+                            </div>
+                            <div class="col-4 col-sm-4 col-lg-4 gallery-custom">
+                            <img class="w-100" src="./images/china2.jpeg" alt="Second slide" data-bs-target="#carouselExample" data-bs-slide-to="1">
+                            </div>
+                            <div class="col-4 col-sm-4 col-lg-4 gallery-custom">
+                            <img class="w-100" src="./images/china3.jpeg" alt="Third slide" data-bs-target="#carouselExample" data-bs-slide-to="2">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container">
+                        <div class="row g-1 g-lg-2" id="gallery" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="col-4 col-sm-4 col-lg-4 gallery-custom">
+                                <img class="w-100" src="./images/china4.jpeg" alt="Forth slide" data-bs-target="#carouselExample" data-bs-slide-to="3">
+                                </div>
+                                <div class="col-4 col-sm-4 col-lg-4 gallery-custom">
+                                <img class="w-100" src="./images/china5.jpeg" alt="Fith slide" data-bs-target="#carouselExample" data-bs-slide-to="4">
+                                </div>
+                                <div class="col-4 col-sm-4 col-lg-4 gallery-custom">
+                                <img class="w-100" src="./images/china6.jpeg" alt="Sixth slide" data-bs-target="#carouselExample" data-bs-slide-to="5">
+                                </div>
+                            </div>
+                         </div>
+                    
+                
+        
+                    
+                    <!-- Modal -->
+                    <!-- 
+                    This part is straight out of Bootstrap docs. Just a carousel inside a modal.
+                    -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                                <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="4"></li>
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="5"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./images/china1.jpeg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/china2.jpeg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/china3.jpeg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/china4.jpeg" alt="Fourth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/china5.jpeg" alt="Fith slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/china6.jpeg" alt="Sixth slide">
+                                </div>
+                                </div>
+                            </div>
+                                <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only"></span>
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         
-
-
             <!-- Best food, activity, visit again -->
 
             <section class="countryBest">
                 <div class="countryBestNotes">
                     <div class="countryBestNotes">
-                        <img src="./images/chinaInfo.png" alt="Country Best Info" class="countryBestInfo">
+                        <img src="./images/chinaInfo copy.png" alt="Country Best Info" class="countryBestInfo">
+                        <img src="./images/chinaInfo.png" alt="Country Best Info" class="countryBestInfoMobile">
                     </div>
                 </div>
             </section>

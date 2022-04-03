@@ -119,8 +119,9 @@
         text-align: center;
     }
     .topSiteNavigation li a{
-        font-size: 14px;
+        font-size: 13px;
         display: block;
+        position: absolute;
         color: #A3625F;
         
     }
@@ -128,9 +129,13 @@
         color: #BB7F7F;
 
     }
+    .nav-toggle:hover{
+        color: #A3625F;
+    }
     .nav-show {
         width: 200px;
         height: calc(30% - 70px);
+        position: absolute;
     }
 
 }
@@ -349,7 +354,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid gray;
+    border-top: 1px solid #d3d1d1;
+    border-bottom: 1px solid #d3d1d1;
     width: 90%;
 
 }
@@ -359,8 +365,10 @@
 .countrySelectionInfo {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 0 0 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 0 0 0px;
 }
 
 .countrySelectionNameDate {
@@ -372,6 +380,7 @@
     flex-direction: column;
     list-style: none;
     align-items: center;
+    align-content: center;
 }
 
 .countryNameEmoji {
@@ -413,6 +422,299 @@
         font-size: 18px;
         font-weight: 300;
     }
+}
+
+
+/* NEW PHOTO GALLERY */
+
+.photosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: .5rem;
+    width: 100%;
+}
+
+#gallery {
+    padding: 2px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#gallery img {
+    height: 75vw;
+    object-fit: cover;
+}
+@media (max-width: 574px) {
+    #gallery img {
+        height: 29vw;
+   }
+}
+
+
+@media (min-width: 578px) {
+
+
+   /* #gallery img {
+    height: 75vw;
+    object-fit:cover;
+    } */
+
+    .modal-dialog {
+    width: 100%;
+    min-width: 600px;
+    }
+
+    .modal-body {
+    width: 100%;
+    min-width: 600px;
+    }
+}
+
+.carousel-item img {
+    height: 65vw;
+    object-fit: cover;
+}
+
+
+
+@media (min-width: 576px) {
+    .carousel-item img {
+        height: 350px;
+   }
+}
+
+
+
+@media (min-width: 576px) {
+    #gallery img {
+        height: 25vw;
+   }
+   .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    }
+    .photosContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media (min-width: 992px) {
+    #gallery img {
+        height: 18vw;
+
+   }
+}
+.carousel-item img {
+    height: 35vw;
+    object-fit:contain;
+}
+
+@media (min-width: 576px) {
+    .carousel-item img {
+        width: 300px;
+   }
+   .modal-body {
+       max-width: 350px;
+   }
+}
+
+@media (max-width: 576px) {
+
+
+    .carousel-item img {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+   }
+
+   .modal-body {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .modal-body img{
+       width: 450px;
+   }
+
+    /* #exampleModal .carousel-indicators {
+        display: none;
+   } */
+   .modal-footer .btn{
+       display: flex;
+   }
+}
+
+* {
+    transition: 0.3s;
+}
+
+.gallery-custom img {
+    display: block;
+    margin: 2px;
+    border-radius: 5px 5px 5px 5px;
+}
+.gallery-custom img:hover {
+    border-radius: 30px 30px 30px 30px;
+}
+
+#exampleModal .modal-content {
+    background: none;
+    border: none;
+}
+#exampleModal .modal-header {
+    border: none;
+}
+#exampleModal .modal-header button {
+    display: none;
+    background: none;
+    border-radius: 100px 100px 0 0;
+    padding: 5px 10px;
+    opacity: 1;
+    position: relative;
+    top: 20px;
+    border: solid 2px white;
+    
+}
+@media (min-width: 992px) {
+    #exampleModal .modal-header button {
+        top: 15px;
+   }
+}
+#exampleModal .modal-header button:hover {
+    top: 3px;
+}
+#exampleModal .modal-header span {
+    color: white;
+}
+#exampleModal .modal-body {
+    padding: 0;
+    border: none;
+    position: relative;
+}
+#exampleModal .modal-body::before, #exampleModal .modal-body::after {
+    content: '';
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    border-radius: 3px 10px;
+}
+@media (min-width: 768px) {
+    #exampleModal .modal-body::before, #exampleModal .modal-body::after {
+        border-radius: 3px 30px;
+        height: 100px;
+        width: 100px;
+   }
+}
+#exampleModal .modal-body::before {
+    top: -5px;
+    left: -5px;
+}
+@media (min-width: 768px) {
+    #exampleModal .modal-body::before {
+        top: -15px;
+        left: -15px;
+   }
+}
+#exampleModal .modal-body::after {
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+}
+@media (min-width: 768px) {
+    #exampleModal .modal-body::after {
+        bottom: -15px;
+        right: -15px;
+   }
+}
+#exampleModal .modal-footer {
+    border: none;
+    margin-top: 60px;
+}
+@media (min-width: 992px) {
+    #exampleModal .modal-footer {
+        margin-top: 40px;
+   }
+}
+#exampleModal .modal-footer .btn {
+    margin: auto;
+    border: solid 2px white;
+    background: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding: 0.2em 0.7em;
+}
+#exampleModal .modal-footer .btn:hover {
+    background: white;
+    color: black;
+}
+#exampleModal .carousel-control-prev, #exampleModal .carousel-control-next {
+    font-size: 2em;
+    top: auto;
+    opacity: 1;
+    bottom: -52px;
+}
+@media (min-width: 768px) {
+    #exampleModal .carousel-control-prev, #exampleModal .carousel-control-next {
+        top: 0;
+        opacity: 0.5;
+        bottom: 0;
+   }
+}
+#exampleModal .carousel-control-next-icon, #exampleModal .carousel-control-prev-icon {
+    height: 30px;
+    width: 30px;
+}
+@media (min-width: 768px) {
+    #exampleModal .carousel-control-prev {
+        left: -90px;
+   }
+}
+@media (min-width: 768px) {
+    #exampleModal .carousel-control-next {
+        right: -90px;
+   }
+}
+#exampleModal .carousel-indicators {
+    bottom: -60px;
+}
+@media (min-width: 992px) {
+    #exampleModal .carousel-indicators {
+        bottom: -30px;
+   }
+}
+#exampleModal .carousel-indicators li {
+    height: 30px;
+    border-radius: 100px;
+    background: none;
+    border: solid 2px white;
+}
+@media (min-width: 992px) {
+    #exampleModal .carousel-indicators li {
+        height: 10px;
+   }
+}
+#exampleModal .carousel-indicators li:hover {
+    background: white;
+}
+#exampleModal .carousel-indicators li.active {
+    background: white;
 }
 
 /* Country Photos */
@@ -537,9 +839,10 @@
     max-width: 200px;
 }
 
-.countryBest img {
-    max-width: 600px;
+.countryBestInfo {
+    max-width: 1200px;
 }
+
 
 /* Activity */
 .bestActivity_icon {
@@ -568,6 +871,11 @@
     max-width: 200px;
 }
 
+.countryBestInfoMobile {
+    display: none;
+}
+
+
 @media (max-width:760px) {
     .visitAgain_icon img {
         max-width: 90px;
@@ -583,11 +891,46 @@
         font-size: 14px;
         font-weight: 300;
     }
-    .countryBest img {
-        max-width: 330px;
+    .countryBestInfo {
+        display: none;
+    }
+    .countryBestInfoMobile {
+        display: block;
+        max-width: 300px;
     }
 
 }
+
+@media (max-width: 860px) {
+    .countryBestInfo {
+        display: none;
+    }
+    .countryBestInfoMobile {
+        display: block;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 960px) {
+    .countryBestInfo {
+        display: none;
+    }
+    .countryBestInfoMobile {
+        display: block;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .countryBestInfo {
+        display: none;
+    }
+    .countryBestInfoMobile {
+        display: block;
+        max-width: 360px;
+    }
+}
+
 
 /* Footer */
 
@@ -703,7 +1046,7 @@
     
     .fastFacts img {
         display: flex;
-        max-width: 500px;
+        width: 380px;
     
     }
 
@@ -768,7 +1111,7 @@
 
 .whereToNextImg {
     display: flex;
-    max-width: 400px;
+    max-width: 300px;
     padding-top: 1rem;
 }
 
